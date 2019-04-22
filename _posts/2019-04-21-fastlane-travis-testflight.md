@@ -172,7 +172,7 @@ before_install:
   - bundle update
 
 script:
-  # Exit immediately if a any of the commands fails
+  # Exit immediately if one of the commands fails
   - set -e
 
   # Run tests
