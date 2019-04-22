@@ -1,0 +1,17 @@
+branches:
+  only:
+  - master
+
+script:
+  # Exit immediately if a any of the commands fails
+  - set -e
+
+  - git clone https://VojtaStavik:$GITHUB_ACCESS_TOKEN@github.com/VojtaStavik/VojtaStavik.github.io.git blog
+  - cd blog
+  - git submodule update --init --recursive
+  - cd content
+  - git checkout master
+  - git pull
+  - cd ..
+  - 'git commit -am "Update content: $TRAVIS_COMMIT_MESSAGE"'
+  - git push
