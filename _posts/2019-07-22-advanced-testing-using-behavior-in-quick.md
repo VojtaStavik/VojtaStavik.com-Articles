@@ -4,7 +4,7 @@ title: Advanced testing using `Behavior` in Quick
 filename: "2019-07-22-advanced-testing-using-behavior-in-quick.md"
 ---
 
-`Behavior<Context>` is a hidden gem in the Quick testing framework. It was [introduced silently in 2017](https://github.com/Quick/Quick/pull/701) and it’s not even mentioned in the documentation! [Here’s my PR which fixes that](https://github.com/Quick/Quick/pull/902). **The more I know about it the more I think _this_ should be the way we write specs in Quick.**
+`Behavior<Context>` is a hidden gem in the Quick testing framework. It was [introduced silently in 2017](https://github.com/Quick/Quick/pull/701) and it’s not even mentioned in the documentation! [Here’s my PR which fixes that](https://github.com/Quick/Quick/pull/905). **The more I know about it the more I think _this_ should be the way we write specs in Quick.**
 
 So, what’s `Behavior`? You can think of it as of a better and safer way of defining shared expectation. But that would be very shortsighted. There’s much more!
 
@@ -88,7 +88,7 @@ open class Behavior<Context> {
 }
 ```
 
-For some reason, the `name` property is defined as `static` and it’s not possible to override it in subclasses. You will see later it can be quite annoying. [I opened a PR to fix this](https://github.com/Quick/Quick/pull/903).
+For some reason, the `name` property is defined as `static` and it’s not possible to override it in subclasses. You will see later it can be quite annoying. [I opened a PR to fix this](https://github.com/Quick/Quick/pull/906).
 
 `Behavior` is generic over the `Context` type. That's the type of the object the Behavior tests.
 
@@ -133,7 +133,7 @@ To use `Behavior` in your tests suite, you simply use it as a parameter for `itB
 itBehavesLike(BehavesLikeCounter.self) { … }
 ```
 
-I like to use a custom overload of `it` which takes `Behavior` as a parameter ([PR with this change](https://github.com/Quick/Quick/pull/904)). It allows me to be more flexible in how I name Behaviors. You’ll see an example of this later in the post.
+I like to use a custom overload of `it` which takes `Behavior` as a parameter ([PR with this change](https://github.com/Quick/Quick/pull/907)). It allows me to be more flexible in how I name Behaviors. You’ll see an example of this later in the post.
 
 ```swift
 public func it<C>(
@@ -162,7 +162,7 @@ Test Case '-[BehaviorExamplesTests.CounterSpec BehavesLikeCounter__should_add_nu
 Test Case '-[BehaviorExamplesTests.CounterSpec BehavesLikeCounter__should_have_the_initial_value_0]' started.
 Test Case '-[BehaviorExamplesTests.CounterSpec BehavesLikeCounter__should_have_the_initial_value_0]' passed (0.000 seconds).
 ```
-> You can see that the "BehavesLikeCounter" part od the test name is a little bit odd. That's why I opened the [PR to make the name configurable](https://github.com/Quick/Quick/pull/903), too.
+> You can see that the "BehavesLikeCounter" part od the test name is a little bit odd. That's why I opened the [PR to make the name configurable](https://github.com/Quick/Quick/pull/906), too.
 
 **Looks pretty neat, doesn’t it?** Wait until you see the complete spec for `ComplexCounter`:
 
