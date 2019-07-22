@@ -167,7 +167,7 @@ Test Case '-[BehaviorExamplesTests.CounterSpec BehavesLikeCounter__should_have_t
 **Looks pretty neat, doesn’t it?** Wait until you see the complete spec for `ComplexCounter`:
 
 ```swift
-class CommplexCounterSpec: QuickSpec {
+class ComplexCounterSpec: QuickSpec {
 
   override func spec() {
 
@@ -213,26 +213,26 @@ class CommplexCounterSpec: QuickSpec {
 ```
 
 ```
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec BehavesLikeCounter__should_add_numbers_correctly]' started.
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec BehavesLikeCounter__should_add_numbers_correctly]' passed (0.001 seconds).
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec BehavesLikeCounter__should_have_the_initial_value_0]' started.
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec BehavesLikeCounter__should_have_the_initial_value_0]' passed (0.000 seconds).
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec changing_the_master_counter__should_also_update_all_bucket_counters]' started.
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec changing_the_master_counter__should_also_update_all_bucket_counters]' passed (0.000 seconds).
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly]' started.
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly]' passed (0.000 seconds).
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly_2]' started.
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly_2]' passed (0.009 seconds).
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly_3]' started.
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly_3]' passed (0.000 seconds).
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0]' started.
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0]' passed (0.000 seconds).
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0_2]' started.
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0_2]' passed (0.000 seconds).
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0_3]' started.
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0_3]' passed (0.000 seconds).
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec should_count_buckets_individually]' started.
-Test Case '-[BehaviorExamplesTests.CommplexCounterSpec should_count_buckets_individually]' passed (0.000 seconds).
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec BehavesLikeCounter__should_add_numbers_correctly]' started.
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec BehavesLikeCounter__should_add_numbers_correctly]' passed (0.001 seconds).
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec BehavesLikeCounter__should_have_the_initial_value_0]' started.
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec BehavesLikeCounter__should_have_the_initial_value_0]' passed (0.000 seconds).
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec changing_the_master_counter__should_also_update_all_bucket_counters]' started.
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec changing_the_master_counter__should_also_update_all_bucket_counters]' passed (0.000 seconds).
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly]' started.
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly]' passed (0.000 seconds).
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly_2]' started.
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly_2]' passed (0.009 seconds).
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly_3]' started.
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_add_numbers_correctly_3]' passed (0.000 seconds).
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0]' started.
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0]' passed (0.000 seconds).
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0_2]' started.
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0_2]' passed (0.000 seconds).
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0_3]' started.
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec every_bucket__BehavesLikeCounter__should_have_the_initial_value_0_3]' passed (0.000 seconds).
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec should_count_buckets_individually]' started.
+Test Case '-[BehaviorExamplesTests.ComplexCounterSpec should_count_buckets_individually]' passed (0.000 seconds).
 ```
 
 Look how we use the same behavior first for the "master" counter and then for each bucket counter. 
@@ -272,7 +272,7 @@ class CounterSpec: QuickSpec {
 ```
 
 ```swift
-class CommplexCounterSpec: QuickSpec {
+class ComplexCounterSpec: QuickSpec {
 
   override func spec() {
 
