@@ -6,6 +6,8 @@ filename: "2019-07-22-advanced-testing-using-behavior-in-quick.md"
 
 `Behavior<Context>` is a hidden gem in the Quick testing framework. It was [introduced silently in 2017](https://github.com/Quick/Quick/pull/701) and it’s not even mentioned in the documentation! [Here’s my PR which fixes that](https://github.com/Quick/Quick/pull/905). **The more I know about it the more I think _this_ should be the way we write specs in Quick.**
 
+![Behavior Xcode screenshot](/images/quick-behavior/behavior-xcode-screenshot-1.png)
+
 So, what’s `Behavior`? You can think of it as of a better and safer way of defining shared expectation. But that would be very shortsighted. There’s much more!
 
 <!-- more -->
