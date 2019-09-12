@@ -10,7 +10,7 @@ Objective-C was the first programming language I learned and used professionally
 
 Swift has module defined namespaces so name prefixes are not needed anymore. *I have to say I miss them. Having your initials as a part of your class' name brings a strangely satisfying feeling of ownership.*
 
-**Let's do a little thought experiment.** ```UITableView``` is one of the keystones of iOS development. Introduced in iOS 2.0, it's one of the oldest API we still actively use. What could ```UITableView``` API names look like if it was introduced in 2017 with Swift only support? Let's play around with namespacing.
+**Let's do a little thought experiment.** ```UITableView``` is one of the cornerstones of iOS development. Introduced in iOS 2.0, it's one of the oldest API we still actively use. What could ```UITableView``` API names look like if it was introduced in 2017 with Swift only support? Let's play around with namespacing.
 
 <!-- more -->
 
