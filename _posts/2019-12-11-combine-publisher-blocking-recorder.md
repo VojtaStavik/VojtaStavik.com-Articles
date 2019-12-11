@@ -250,15 +250,15 @@ XCTAssertRecordedValues(recorder, [1, 2])
 ### Ideas
 - What if we move the `recorder.waitForAllValues()` into the `XCTAssertRecordedValues` function? It would mean we wouldn't have to write it manually but it could also feel like "to much magic":
 ```swift
-public func XCTAssertRecordedValues<Input: Equatable, Failure: Error>(
-  _ recorder: Recorder<Input, Failure>,
-  _ expectedValues: [Input],
-  file: StaticString = #file,
-  line: UInt = #line
-) {
-  recorder.waitForAllValues(file: file, line: line)
-  // ... //
-}
+  public func XCTAssertRecordedValues<Input: Equatable, Failure: Error>(
+    _ recorder: Recorder<Input, Failure>,
+    _ expectedValues: [Input],
+    file: StaticString = #file,
+    line: UInt = #line
+  ) {
+    recorder.waitForAllValues(file: file, line: line)
+    // ... //
+  }
 
   func testPassthroughSubject() {
     let publisher = PassthroughSubject<Int, Never>()
