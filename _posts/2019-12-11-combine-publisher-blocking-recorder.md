@@ -176,8 +176,8 @@ Let's give it a shot and use `Recorder` in tests. You'll be amazed by how simple
     // 3.
     // Let's send the values to the publisher asynchronously
     let queue = DispatchQueue.global(qos: .default)
-    queue.asyncAfter(deadline: .now() + 0.1) { publisher.send(1) }
-    queue.asyncAfter(deadline: .now() + 0.2) { publisher.send(2) }
+    queue.asyncAfter(deadline: .now() + .seconds(1)) { publisher.send(1) }
+    queue.asyncAfter(deadline: .now() + .seconds(2)) { publisher.send(2) }
 
     // 4.
     // On this line, the execution of the program pauses.
@@ -265,8 +265,8 @@ XCTAssertRecordedValues(recorder, [1, 2])
     let recorder = publisher.record(numberOfRecords: 2)
 
     let queue = DispatchQueue.global(qos: .default)
-    queue.asyncAfter(deadline: .now() + 0.1) { publisher.send(1) }
-    queue.asyncAfter(deadline: .now() + 0.2) { publisher.send(2) }
+    queue.asyncAfter(deadline: .now() + .seconds(1)) { publisher.send(1) }
+    queue.asyncAfter(deadline: .now() + .seconds(2)) { publisher.send(2) }
 
     XCTAssertRecordedValues(recorder, [1, 2])
   }
