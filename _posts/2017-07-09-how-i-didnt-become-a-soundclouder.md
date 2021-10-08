@@ -54,3 +54,7 @@ However, SoundCloud claims they are not going to pay me my salary during those 4
 SoundCloud confirmed I will be receiving my salary during my notice period. I also received an email from Artem Fishman (CTO) with further explanation of the situation.
 
 With this, I consider this episode in my life closed. **What a WEEK!**
+
+---
+### Update: October 8th, 2021
+I joined SoundCloud on the second try as the iOS Platform Lead :) 
